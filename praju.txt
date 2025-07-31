@@ -1,0 +1,101 @@
+import matplotlib.pyplot as plt
+import numpy as np
+arr = np.array([1,2,3,4,561,6])
+arr1 = np.array([4,5,4,5,41,12])
+print(arr)
+print(arr1)
+print(arr.sum())
+print(arr.mean())
+print(arr.max())
+print(arr.min())
+plt.pie(arr,arr1)
+plt.show()
+print(np.__version__)
+arr2 = np.arange(13)
+print(arr2)
+arr3 = np.random.rand(13)
+print(arr3)
+arr2 = np.array([10,20,30])
+print(arr2.ndim)
+arr20 = np.array([[10,20,30],[12,14,14]])
+print(arr2.ndim)
+arr21 = np.array([[101,201,301],[121,141,114]])
+print(arr21.ndim)
+arr2 = np.array([[[10,20,30],[12,14,14],[12,12,45]]])
+print(arr2.ndim)
+arr2 = np.array([[[10,20,30],[12,14,14],[12,12,45]]])
+print(arr2)
+print(arr2.dtype)
+arr4 =np.prod([arr,arr1],axis=1)
+print(arr4)
+arr5 =np.prod([arr20,arr21],axis=2)
+print(arr5)
+arr6 = np.arange(12).reshape(3,4)
+print(arr6)
+print(np.cumprod(arr))
+print(np.cumsum(arr))
+arr7 =np.array([1,2,3,4])
+num=5
+a=arr7+5
+print(a)
+#array add
+b =arr+arr1
+print(b)
+#multi 
+c= arr * arr1
+print(c)
+# true or false
+d  = arr1 >3
+print(d)
+#mtaplotlib
+import matplotlib.pyplot as plt
+array = np.array([1,2,3,])
+array1 = np.array([4,5,6])
+plt.plot(array,array1)
+plt.show()
+plt.bar(array,array1)
+plt.show()
+
+plt.pie(array,array1)
+plt.show()
+
+output:-
+
+
+[  1   2   3   4 561   6]
+[ 4  5  4  5 41 12]
+577
+96.16666666666667
+561
+1
+
+1.24.3
+[ 0  1  2  3  4  5  6  7  8  9 10 11 12]
+[0.50446887 0.00253226 0.72301695 0.34764878 0.95917175 0.6394504
+ 0.20990944 0.73703473 0.61577818 0.48444326 0.59872098 0.52255384
+ 0.22665013]
+1
+1
+2
+3
+[[[10 20 30]
+  [12 14 14]
+  [12 12 45]]]
+int32
+[ 80784 196800]
+[[   6000    2352]
+ [6110601 1944954]]
+[[ 0  1  2  3]
+ [ 4  5  6  7]
+ [ 8  9 10 11]]
+[    1     2     6    24 13464 80784]
+[  1   3   6  10 571 577]
+[6 7 8 9]
+[  5   7   7   9 602  18]
+[    4    10    12    20 23001    72]
+[ True  True  True  True  True  True]
+
+
+
+?
+?
